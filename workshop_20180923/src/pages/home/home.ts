@@ -16,6 +16,9 @@ export class HomePage {
 
   
   }
+  go2detail(){
+    this.navCtrl.push(detailPage)
+  }
   itemSelected(item){
     console.log("clicked item:" + item.name);
     this.navCtrl.push(detailPage,{myitem : item})
