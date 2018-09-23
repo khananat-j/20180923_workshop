@@ -1,18 +1,14 @@
 <ion-header>
     <ion-navbar>
       <ion-title>
-        องค์การพิพิธภัณฑ์วิทยาศาสตร์แห่งชาติ
+        {{item.name}}
       </ion-title>
     </ion-navbar>
   </ion-header>
   
   <ion-content no-padding>
     <p>
-      <ion-list>
-        <button ion-item *ngFor="let item of items" (click)="itemSelected(item)">
-          <img src= "{{ item.image}}" width="320px"> 
-        </button>  
-      </ion-list>
+        Welcome to {{item.name}}
     </p>
   </ion-content>
   
