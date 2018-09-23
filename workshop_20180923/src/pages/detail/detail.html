@@ -1,15 +1,18 @@
 <ion-header>
     <ion-navbar>
       <ion-title>
-        IONIC DETAIL
+        องค์การพิพิธภัณฑ์วิทยาศาสตร์แห่งชาติ
       </ion-title>
     </ion-navbar>
   </ion-header>
   
-  <ion-content padding>
-    The world is your oyster.
+  <ion-content no-padding>
     <p>
-      If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
+      <ion-list>
+        <button ion-item *ngFor="let item of items" (click)="itemSelected(item)">
+          <img src= "{{ item.image}}" width="320px"> 
+        </button>  
+      </ion-list>
     </p>
   </ion-content>
   
